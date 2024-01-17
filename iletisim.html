@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+        <style>
+          .custom-dropdown {
+        margin-left: -0.18em; /* Sola kaydırma miktarı */
+    }
+    body {
+        background-image: url(/resimler/iletisimBackground.jpg); /* Resmin dosya yolunu belirtin */
+        background-size: cover; /* Resmi sayfa boyutuna uyacak şekilde ölçeklendirir */
+        background-position: center; /* Resmi sayfanın ortasına yerleştirir */
+        background-repeat: no-repeat; /* Resmi yinelenmeye karşı korur */
+        height: 100vh; /* Sayfa yüksekliği boyunca resmi genişletir */
+        margin: 0; /* Sayfanın kenar boşluklarını kaldırır */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container2 {
+        background-color: rgba(199, 198, 198, 0.8); /* Beyaz arka plan ile sayfanın okunabilirliğini artırır */
+        padding: 20px;
+        border-radius: 10px;
+    }
+        </style>
+        
+    </head>
+<body>   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand mr-3" href="http://127.0.0.1:5500/bootstrap/body.html">
+                <img src="/resimler/icon.png" width="40" height="40" alt="">
+                It's My Life..
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:5500/bootstrap/body.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">Communication</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkında.html">About Me</a>
+                      </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Contents
+                        </a>
+                        <div class="dropdown-menu custom-dropdown">
+                            <a class="nav-link" href="push.html">Push (İtiş)</a>
+                            <a class="nav-link" href="pull.html">Pull (Çekiş)</a>
+                            <a class="nav-link" href="leg.html">Leg (Bacak) </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="nav-link" href="bulk.html">Bulk</a>
+                            <a class="nav-link" href="definition.html">Definition</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <form class="form-inline ms-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+
+    </nav>
+    
+    <div class="container2 mt-3">
+        <form>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationServer01">First name</label>
+                    <input type="text" class="form-control" id="validationServer01" placeholder="First name" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please provide a valid first name.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationServer02">Last name</label>
+                    <input type="text" class="form-control" id="validationServer02" placeholder="Last name" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please provide a valid last name.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationServer03">Age</label>
+                    <input type="text" class="form-control" id="validationServer03" placeholder="Age" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Lütfen Yaşınızı Doğru Girdiğinizden Emin Olun
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationServer04">Workout Type</label>
+                    <select class="custom-select" id="validationServer04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>Push</option>
+                        <option>Pull</option>
+                        <option>Leg</option>
+                        <option>Bulk</option>
+                        <option>Definition</option>
+                    </select>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please select a workout type.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationServer05">Number</label>
+                    <input type="text" class="form-control" id="validationServer05" placeholder="Number" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Lütfen Numarınızı Doğru Girdiğinizden Emin Olun
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+                    <label class="form-check-label" for="invalidCheck3">
+                        Agree to terms and conditions
+                    </label>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit" onclick="validateForm()">Submit form</button>
+        </form>
+    
+        <script>
+            function validateForm() {
+                // First name validation
+                var firstNameInput = document.getElementById("validationServer01");
+                if (firstNameInput.value.trim() === "") {
+                    firstNameInput.classList.remove("is-valid");
+                    firstNameInput.classList.add("is-invalid");
+                } else {
+                    firstNameInput.classList.remove("is-invalid");
+                    firstNameInput.classList.add("is-valid");
+                }
+    
+                // Last name validation
+                var lastNameInput = document.getElementById("validationServer02");
+                if (lastNameInput.value.trim() === "") {
+                    lastNameInput.classList.remove("is-valid");
+                    lastNameInput.classList.add("is-invalid");
+                } else {
+                    lastNameInput.classList.remove("is-invalid");
+                    lastNameInput.classList.add("is-valid");
+                }
+    
+                // Age validation (e.g., between 18 and 99)
+                var ageInput = document.getElementById("validationServer03");
+                var ageValue = parseInt(ageInput.value);
+                if (isNaN(ageValue) || ageValue < 18 || ageValue > 99) {
+                    ageInput.classList.remove("is-valid");
+                    ageInput.classList.add("is-invalid");
+                } else {
+                    ageInput.classList.remove("is-invalid");
+                    ageInput.classList.add("is-valid");
+                }
+    
+                // Number validation (e.g., 11 digits)
+                var numberInput = document.getElementById("validationServer05");
+                var numberValue = numberInput.value;
+                if (!/^\d{11}$/.test(numberValue)) {
+                    numberInput.classList.remove("is-valid");
+                    numberInput.classList.add("is-invalid");
+                } else {
+                    numberInput.classList.remove("is-invalid");
+                    numberInput.classList.add("is-valid");
+                }
+            }
+        </script>
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>
